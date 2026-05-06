@@ -70,5 +70,7 @@ advice_var = tk.IntVar()
 tk.Checkbutton(root, text="Show health advice", variable=advice_var).grid(row=4, column=0)
 
 # Button
+tk.Button(root, text="Calculate BMI", command=calculate_bmi).grid(row=5, column=0)
+
 # Output Label
 # Run
