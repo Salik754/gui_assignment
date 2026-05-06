@@ -28,6 +28,15 @@ def calculate_bmi():
         result += f"\nCategory: {category}"
 
         # Extra message if checkbox checked
+        if advice_var.get() == 1:
+            result += "\nStay healthy and active!"
+
+        label_result["text"] = result
+
+    except ValueError:
+        label_result["text"] = "Enter valid numbers"
+
+
 # ---- Widgets ----
 # Mass
 # Height
