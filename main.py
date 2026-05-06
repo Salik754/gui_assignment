@@ -58,6 +58,12 @@ tk.Radiobutton(root, text="Male", variable=gender_var, value="Male").grid(row=2,
 tk.Radiobutton(root, text="Female", variable=gender_var, value="Female").grid(row=2, column=2)
 
 # OptionMenu (Activity)
+tk.Label(root, text="Activity Level:").grid(row=3, column=0)
+
+activity_var = tk.StringVar(value="Low")
+
+tk.OptionMenu(root, activity_var, "Low", "Medium", "High").grid(row=3, column=1)
+
 # Checkbutton
 # Button
 # Output Label
