@@ -38,7 +38,12 @@ def calculate_bmi():
 
 
 # ---- Widgets ----
+
 # Mass
+tk.Label(root, text="Mass (kg):").grid(row=0, column=0)
+entry_mass = tk.Entry(root)
+entry_mass.grid(row=0, column=1)
+
 # Height
 # Radiobutton (Gender)
 # OptionMenu (Activity)
