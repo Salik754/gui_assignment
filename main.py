@@ -16,6 +16,17 @@ def calculate_bmi():
         result = f"BMI: {bmi:.2f}"
 
         # Category
+        if bmi < 18.5:
+            category = "Underweight"
+        elif bmi < 25:
+            category = "Normal"
+        elif bmi < 30:
+            category = "Overweight"
+        else:
+            category = "Obese"
+
+        result += f"\nCategory: {category}"
+
         # Extra message if checkbox checked
 # ---- Widgets ----
 # Mass
