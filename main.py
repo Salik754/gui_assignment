@@ -65,6 +65,10 @@ activity_var = tk.StringVar(value="Low")
 tk.OptionMenu(root, activity_var, "Low", "Medium", "High").grid(row=3, column=1)
 
 # Checkbutton
+advice_var = tk.IntVar()
+
+tk.Checkbutton(root, text="Show health advice", variable=advice_var).grid(row=4, column=0)
+
 # Button
 # Output Label
 # Run
