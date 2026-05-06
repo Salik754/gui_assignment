@@ -77,3 +77,4 @@ label_result = tk.Label(root, text="Result will appear here")
 label_result.grid(row=5, column=1)
 
 # Run
+root.mainloop()
