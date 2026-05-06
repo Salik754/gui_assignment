@@ -5,6 +5,16 @@ root.title("BMI Health Calculator")
 
 
 # Function
+def calculate_bmi():
+    try:
+        mass = float(entry_mass.get())
+        height_cm = float(entry_height.get())
+
+        height_m = height_cm / 100
+        bmi = mass / (height_m ** 2)
+
+        result = f"BMI: {bmi:.2f}"
+
         # Category
         # Extra message if checkbox checked
 # ---- Widgets ----
