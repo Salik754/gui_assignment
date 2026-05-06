@@ -45,6 +45,10 @@ entry_mass = tk.Entry(root)
 entry_mass.grid(row=0, column=1)
 
 # Height
+tk.Label(root, text="Height (cm):").grid(row=1, column=0)
+entry_height = tk.Entry(root)
+entry_height.grid(row=1, column=1)
+
 # Radiobutton (Gender)
 # OptionMenu (Activity)
 # Checkbutton
