@@ -50,6 +50,13 @@ entry_height = tk.Entry(root)
 entry_height.grid(row=1, column=1)
 
 # Radiobutton (Gender)
+tk.Label(root, text="Gender:").grid(row=2, column=0)
+
+gender_var = tk.StringVar(value="Male")
+
+tk.Radiobutton(root, text="Male", variable=gender_var, value="Male").grid(row=2, column=1)
+tk.Radiobutton(root, text="Female", variable=gender_var, value="Female").grid(row=2, column=2)
+
 # OptionMenu (Activity)
 # Checkbutton
 # Button
