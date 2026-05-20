@@ -41,18 +41,18 @@ def calculate_bmi():
 
 # Mass
 tk.Label(root, text="Mass (kg):").grid(row=0, column=0)
-entry_mass = tk.Entry(root)
+entry_mass = tk.Entry(root) #This stores the Entry widget inside a variable to retrieve what user typed.
 entry_mass.grid(row=0, column=1)
 
 # Height
 tk.Label(root, text="Height (cm):").grid(row=1, column=0)
-entry_height = tk.Entry(root)
+entry_height = tk.Entry(root) #This stores the Entry widget inside a variable to retrieve what user typed.
 entry_height.grid(row=1, column=1)
 
 # Radiobutton (Gender)
 tk.Label(root, text="Gender:").grid(row=2, column=0)
 
-gender_var = tk.StringVar(value="Male")
+gender_var = tk.StringVar(value="Male") #Stores selected gender.
 
 tk.Radiobutton(root, text="Male", variable=gender_var, value="Male").grid(row=2, column=1)
 tk.Radiobutton(root, text="Female", variable=gender_var, value="Female").grid(row=2, column=2)
@@ -60,12 +60,12 @@ tk.Radiobutton(root, text="Female", variable=gender_var, value="Female").grid(ro
 # OptionMenu (Activity)
 tk.Label(root, text="Activity Level:").grid(row=3, column=0)
 
-activity_var = tk.StringVar(value="Low")
+activity_var = tk.StringVar(value="Low")#Stores dropdown selection.
 
-tk.OptionMenu(root, activity_var, "Low", "Medium", "High").grid(row=3, column=1)
+tk.OptionMenu(root, activity_var, "Low", "Medium", "High").grid(row=3, column=1)# Creates dropdown menu.
 
 # Checkbutton
-advice_var = tk.IntVar()
+advice_var = tk.IntVar()#stores integers value
 
 tk.Checkbutton(root, text="Show health advice", variable=advice_var).grid(row=4, column=0)
 
